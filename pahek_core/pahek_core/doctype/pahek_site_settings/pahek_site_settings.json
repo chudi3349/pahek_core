@@ -1,0 +1,148 @@
+{
+ "actions": [],
+ "creation": "2026-09-28 12:00:00.000000",
+ "description": "Organisation identity used across PAHEK sites: name, licence, contact details, social links",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "organisation_section",
+  "organisation_name",
+  "tagline",
+  "logo",
+  "nscdc_licence_no",
+  "column_break_contact",
+  "phone",
+  "public_email",
+  "office_address",
+  "social_section",
+  "linkedin_url",
+  "x_url",
+  "facebook_url",
+  "column_break_social",
+  "instagram_url",
+  "youtube_url"
+ ],
+ "fields": [
+  {
+   "fieldname": "organisation_section",
+   "fieldtype": "Section Break",
+   "label": "Organisation"
+  },
+  {
+   "default": "PAHEK Security",
+   "fieldname": "organisation_name",
+   "fieldtype": "Data",
+   "label": "Organisation Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tagline",
+   "fieldtype": "Data",
+   "label": "Tagline"
+  },
+  {
+   "fieldname": "logo",
+   "fieldtype": "Attach Image",
+   "label": "Logo"
+  },
+  {
+   "fieldname": "nscdc_licence_no",
+   "fieldtype": "Data",
+   "label": "NSCDC Licence No."
+  },
+  {
+   "fieldname": "column_break_contact",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "public_email",
+   "fieldtype": "Data",
+   "label": "Public Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "office_address",
+   "fieldtype": "Small Text",
+   "label": "Office Address"
+  },
+  {
+   "fieldname": "social_section",
+   "fieldtype": "Section Break",
+   "label": "Social Links"
+  },
+  {
+   "fieldname": "linkedin_url",
+   "fieldtype": "Data",
+   "label": "LinkedIn URL",
+   "options": "URL"
+  },
+  {
+   "fieldname": "x_url",
+   "fieldtype": "Data",
+   "label": "X (Twitter) URL",
+   "options": "URL"
+  },
+  {
+   "fieldname": "facebook_url",
+   "fieldtype": "Data",
+   "label": "Facebook URL",
+   "options": "URL"
+  },
+  {
+   "fieldname": "column_break_social",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "instagram_url",
+   "fieldtype": "Data",
+   "label": "Instagram URL",
+   "options": "URL"
+  },
+  {
+   "fieldname": "youtube_url",
+   "fieldtype": "Data",
+   "label": "YouTube URL",
+   "options": "URL"
+  }
+ ],
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-09-28 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "PAHEK Core",
+ "name": "PAHEK Site Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "read": 1,
+   "role": "System Manager",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "read": 1,
+   "role": "PAHEK Admin",
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "PAHEK Editor"
+  },
+  {
+   "read": 1,
+   "role": "AI Drafter"
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
