@@ -20,7 +20,13 @@
   "facebook_url",
   "column_break_social",
   "instagram_url",
-  "youtube_url"
+  "youtube_url",
+  "enquiries_section",
+  "enquiry_notification_email",
+  "column_break_enquiries",
+  "recaptcha_enabled",
+  "recaptcha_site_key",
+  "recaptcha_secret_key"
  ],
  "fields": [
   {
@@ -109,6 +115,39 @@
    "fieldtype": "Data",
    "label": "YouTube URL",
    "options": "URL"
+  },
+  {
+   "fieldname": "enquiries_section",
+   "fieldtype": "Section Break",
+   "label": "Website Enquiries"
+  },
+  {
+   "description": "Where contact-form submissions are emailed. Falls back to Public Email, then admin@paheksecurity.com, if left blank.",
+   "fieldname": "enquiry_notification_email",
+   "fieldtype": "Data",
+   "label": "Notification Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "column_break_enquiries",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "Leave off until a real reCAPTCHA Enterprise key (from PAHEK's own Google Cloud project) is available. The contact form works without it; this just adds bot-screening on top.",
+   "fieldname": "recaptcha_enabled",
+   "fieldtype": "Check",
+   "label": "reCAPTCHA Enabled"
+  },
+  {
+   "fieldname": "recaptcha_site_key",
+   "fieldtype": "Data",
+   "label": "reCAPTCHA Site Key"
+  },
+  {
+   "fieldname": "recaptcha_secret_key",
+   "fieldtype": "Password",
+   "label": "reCAPTCHA Secret Key"
   }
  ],
  "issingle": 1,
